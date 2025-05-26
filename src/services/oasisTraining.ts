@@ -76,7 +76,7 @@ ${relevantSections}
 
 ` : ''}Your task is to analyze clinical transcripts and extract information for the following documentation elements:
 ${documentationElements.map(e => `- ${e.id}: ${e.question}
-  Context: ${e.context || 'No specific context provided'}`).join('\n')}
+  Context: ${e.context}`).join('\n')}
 
 Instructions:
 1. Analyze the transcript thoroughly to identify relevant information for each documentation element
