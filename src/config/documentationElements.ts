@@ -24,6 +24,6 @@ export const documentationElements: DocumentationElement[] = [
   {
     id: "statement_of_summary",
     question: "Provide a Clinical Statement of Summary",
-    context: "Extract a concise summary of the patient's medical history, including diagnoses, medications, and relevant test results"
+    context: "Extract a concise summary of the patient's medical history, including diagnoses, medications, and relevant test results. Include any instructions for follow-up care. Do not include any other information."
   }
 ]; 

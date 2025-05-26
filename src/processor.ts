@@ -3,7 +3,6 @@ import fs from 'fs/promises';
 import dotenv from 'dotenv';
 import { documentationElements } from './config/documentationElements';
 import { OasisTrainingService } from './services/oasisTraining';
-import path from 'path';
 
 // Load environment variables
 dotenv.config();

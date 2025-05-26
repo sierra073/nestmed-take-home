@@ -9,25 +9,29 @@ A CLI tool that uses GPT-4 to analyze clinical transcripts and extract specific 
    ```bash
    npm install
    ```
-3. Create a `.env` file in the root directory and add your OpenAI API key:
+3. Create a `.env` file in the root directory with your OpenAI API key:
    ```
    OPENAI_API_KEY=your_api_key_here
    ```
-4. Build the project (this will automatically train the model with the OASIS manual):
+4. Build the project:
    ```bash
    npm run build
    ```
 
 ## Usage
 
-Analyze clinical transcripts using one of these methods:
+The tool can analyze clinical transcripts in two ways:
+
+### 1. Analyze text directly:
 
 ```bash
-# Analyze text directly
-npm run dev analyze "Your transcript text here"
+npm run dev -- analyze "Patient presents with difficulty bathing and mobility issues. Lives alone in a two-story house."
+```
 
-# Or analyze a file
-npm run dev analyze path/to/transcript.txt --file
+### 2. Analyze a file:
+
+```bash
+npm run dev -- analyze transcripts/test.txt -f   
 ```
 
 The tool will output a JSON object containing the extracted information for each documentation element, including confidence levels and context.
@@ -63,12 +67,6 @@ The tool is configured to extract the following information from clinical transc
      - Diagnoses
      - Medications
      - Relevant test results
-
-## Development
-
-- `npm run dev` - Run the tool in development mode
-- `npm run build` - Build the project and train the model
-- `npm start` - Run the built project
 
 ## Error Handling
 

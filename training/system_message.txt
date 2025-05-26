@@ -10,7 +10,7 @@ Your task is to analyze clinical transcripts and extract information for the fol
 - vital_signs: What are the patient's vital signs?
   Context: Extract numerical values and units for each of these vital signs: heart rate, blood pressure, respiratory rate, and blood sugar level.
 - statement_of_summary: Provide a Clinical Statement of Summary
-  Context: Extract a concise summary of the patient's medical history, including diagnoses, medications, and relevant test results
+  Context: Extract a concise summary of the patient's medical history, including diagnoses, medications, and relevant test results. Include any instructions for follow-up care. Do not include any other information.
 
 Instructions:
 1. Analyze the transcript thoroughly to identify relevant information for each documentation element
