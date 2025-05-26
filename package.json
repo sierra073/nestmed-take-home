@@ -1,0 +1,27 @@
+{
+  "name": "clinical-transcript-analyzer",
+  "version": "1.0.0",
+  "description": "CLI tool to analyze clinical transcripts using GPT-4",
+  "main": "dist/index.js",
+  "bin": {
+    "clinical-transcript-analyzer": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node dist/index.js train",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["clinical", "transcript", "gpt-4", "analysis"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^2.6.7",
+    "openai": "^4.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
